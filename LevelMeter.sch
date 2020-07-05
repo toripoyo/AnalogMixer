@@ -1,0 +1,914 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 3450 2550 0    50   Input ~ 0
+mix_out_L
+Text GLabel 3450 4050 0    50   Input ~ 0
+mix_out_R
+$Comp
+L Amplifier_Operational:NJM4558 U8
+U 2 1 5EF4DE2A
+P 5900 3850
+F 0 "U8" H 5950 4150 50  0000 C CNN
+F 1 "NJM4580CG" H 6050 4050 50  0000 C CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 5900 3850 50  0001 C CNN
+F 3 "http://www.njr.com/semicon/PDF/NJM4558_NJM4559_E.pdf" H 5900 3850 50  0001 C CNN
+	2    5900 3850
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R24
+U 1 1 5EF5AA1F
+P 5500 4150
+F 0 "R24" H 5350 4200 50  0000 C CNN
+F 1 "470k" H 5350 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5500 4150 50  0001 C CNN
+F 3 "~" H 5500 4150 50  0001 C CNN
+	1    5500 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:NJM4558 U10
+U 1 1 5EFB9A20
+P 7350 2450
+F 0 "U10" H 7350 2817 50  0000 C CNN
+F 1 "NJM4580CG" H 7350 2726 50  0000 C CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 7350 2450 50  0001 C CNN
+F 3 "http://www.njr.com/semicon/PDF/NJM4558_NJM4559_E.pdf" H 7350 2450 50  0001 C CNN
+	1    7350 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:NJM4558 U10
+U 2 1 5EFBB4B0
+P 7350 3650
+F 0 "U10" H 7350 4017 50  0000 C CNN
+F 1 "NJM4580CG" H 7350 3926 50  0000 C CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 7350 3650 50  0001 C CNN
+F 3 "http://www.njr.com/semicon/PDF/NJM4558_NJM4559_E.pdf" H 7350 3650 50  0001 C CNN
+	2    7350 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C35
+U 1 1 5EFC96C6
+P 4700 4150
+F 0 "C35" H 4788 4196 50  0000 L CNN
+F 1 "0.47u" H 4788 4105 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 4700 4150 50  0001 C CNN
+F 3 "~" H 4700 4150 50  0001 C CNN
+	1    4700 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EFE6B24
+P 1800 6400
+AR Path="/5EFE6B24" Ref="C?"  Part="1" 
+AR Path="/5EF8073C/5EFE6B24" Ref="C?"  Part="1" 
+AR Path="/5F64D560/5EFE6B24" Ref="C26"  Part="1" 
+F 0 "C26" H 1900 6450 50  0000 L CNN
+F 1 "0.1u" H 1900 6350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1800 6400 50  0001 C CNN
+F 3 "~" H 1800 6400 50  0001 C CNN
+	1    1800 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9VA #PWR?
+U 1 1 5EFE6B2A
+P 1800 6200
+AR Path="/5EE15687/5EFE6B2A" Ref="#PWR?"  Part="1" 
+AR Path="/5EFE6B2A" Ref="#PWR?"  Part="1" 
+AR Path="/5EF8073C/5EFE6B2A" Ref="#PWR?"  Part="1" 
+AR Path="/5F64D560/5EFE6B2A" Ref="#PWR043"  Part="1" 
+F 0 "#PWR043" H 1800 6075 50  0001 C CNN
+F 1 "+9VA" H 1815 6373 50  0000 C CNN
+F 2 "" H 1800 6200 50  0001 C CNN
+F 3 "" H 1800 6200 50  0001 C CNN
+	1    1800 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-9VA #PWR?
+U 1 1 5EFE6B30
+P 1800 7000
+AR Path="/5EE15687/5EFE6B30" Ref="#PWR?"  Part="1" 
+AR Path="/5EF8073C/5EFE6B30" Ref="#PWR?"  Part="1" 
+AR Path="/5EFE6B30" Ref="#PWR?"  Part="1" 
+AR Path="/5F64D560/5EFE6B30" Ref="#PWR044"  Part="1" 
+F 0 "#PWR044" H 1800 6875 50  0001 C CNN
+F 1 "-9VA" H 1815 7173 50  0000 C CNN
+F 2 "" H 1800 7000 50  0001 C CNN
+F 3 "" H 1800 7000 50  0001 C CNN
+	1    1800 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EFE6B36
+P 1800 6800
+AR Path="/5EFE6B36" Ref="C?"  Part="1" 
+AR Path="/5EF8073C/5EFE6B36" Ref="C?"  Part="1" 
+AR Path="/5F64D560/5EFE6B36" Ref="C27"  Part="1" 
+F 0 "C27" H 1900 6850 50  0000 L CNN
+F 1 "0.1u" H 1900 6750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1800 6800 50  0001 C CNN
+F 3 "~" H 1800 6800 50  0001 C CNN
+	1    1800 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 7000 1800 6950
+Wire Wire Line
+	1800 6950 2200 6950
+Connection ~ 1800 6950
+Wire Wire Line
+	1800 6950 1800 6900
+Wire Wire Line
+	2200 6250 1800 6250
+Wire Wire Line
+	1800 6250 1800 6200
+Wire Wire Line
+	1800 6300 1800 6250
+Connection ~ 1800 6250
+Wire Wire Line
+	1800 6500 1800 6600
+$Comp
+L power:GND #PWR?
+U 1 1 5EFE6B45
+P 1600 6750
+AR Path="/5EE15687/5EFE6B45" Ref="#PWR?"  Part="1" 
+AR Path="/5EFE6B45" Ref="#PWR?"  Part="1" 
+AR Path="/5EF8073C/5EFE6B45" Ref="#PWR?"  Part="1" 
+AR Path="/5F64D560/5EFE6B45" Ref="#PWR042"  Part="1" 
+F 0 "#PWR042" H 1600 6500 50  0001 C CNN
+F 1 "GND" H 1605 6577 50  0000 C CNN
+F 2 "" H 1600 6750 50  0001 C CNN
+F 3 "" H 1600 6750 50  0001 C CNN
+	1    1600 6750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 6750 1600 6600
+Wire Wire Line
+	1600 6600 1800 6600
+Connection ~ 1800 6600
+Wire Wire Line
+	1800 6600 1800 6700
+$Comp
+L Device:C_Small C?
+U 1 1 5EFE6B4F
+P 2200 6600
+AR Path="/5EFE6B4F" Ref="C?"  Part="1" 
+AR Path="/5EF8073C/5EFE6B4F" Ref="C?"  Part="1" 
+AR Path="/5F64D560/5EFE6B4F" Ref="C28"  Part="1" 
+F 0 "C28" H 2300 6650 50  0000 L CNN
+F 1 "0.1u" H 2300 6550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2200 6600 50  0001 C CNN
+F 3 "~" H 2200 6600 50  0001 C CNN
+	1    2200 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 6250 2200 6500
+Wire Wire Line
+	2200 6700 2200 6950
+Wire Wire Line
+	2550 6250 2200 6250
+Connection ~ 2200 6250
+Wire Wire Line
+	2550 6950 2200 6950
+Connection ~ 2200 6950
+Wire Wire Line
+	2550 6300 2550 6250
+Wire Wire Line
+	2550 6900 2550 6950
+$Comp
+L Amplifier_Operational:NJM4558 U8
+U 3 1 5EFE8CC2
+P 2650 6600
+F 0 "U8" H 2608 6646 50  0000 L CNN
+F 1 "NJM4580CG" H 2608 6555 50  0000 L CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 2650 6600 50  0001 C CNN
+F 3 "http://www.njr.com/semicon/PDF/NJM4558_NJM4559_E.pdf" H 2650 6600 50  0001 C CNN
+	3    2650 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EFF4EEB
+P 3400 6400
+AR Path="/5EFF4EEB" Ref="C?"  Part="1" 
+AR Path="/5EF8073C/5EFF4EEB" Ref="C?"  Part="1" 
+AR Path="/5F64D560/5EFF4EEB" Ref="C29"  Part="1" 
+F 0 "C29" H 3500 6450 50  0000 L CNN
+F 1 "0.1u" H 3500 6350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3400 6400 50  0001 C CNN
+F 3 "~" H 3400 6400 50  0001 C CNN
+	1    3400 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9VA #PWR?
+U 1 1 5EFF4EF5
+P 3400 6200
+AR Path="/5EE15687/5EFF4EF5" Ref="#PWR?"  Part="1" 
+AR Path="/5EFF4EF5" Ref="#PWR?"  Part="1" 
+AR Path="/5EF8073C/5EFF4EF5" Ref="#PWR?"  Part="1" 
+AR Path="/5F64D560/5EFF4EF5" Ref="#PWR048"  Part="1" 
+F 0 "#PWR048" H 3400 6075 50  0001 C CNN
+F 1 "+9VA" H 3415 6373 50  0000 C CNN
+F 2 "" H 3400 6200 50  0001 C CNN
+F 3 "" H 3400 6200 50  0001 C CNN
+	1    3400 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-9VA #PWR?
+U 1 1 5EFF4EFF
+P 3400 7000
+AR Path="/5EE15687/5EFF4EFF" Ref="#PWR?"  Part="1" 
+AR Path="/5EF8073C/5EFF4EFF" Ref="#PWR?"  Part="1" 
+AR Path="/5EFF4EFF" Ref="#PWR?"  Part="1" 
+AR Path="/5F64D560/5EFF4EFF" Ref="#PWR049"  Part="1" 
+F 0 "#PWR049" H 3400 6875 50  0001 C CNN
+F 1 "-9VA" H 3415 7173 50  0000 C CNN
+F 2 "" H 3400 7000 50  0001 C CNN
+F 3 "" H 3400 7000 50  0001 C CNN
+	1    3400 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EFF4F09
+P 3400 6800
+AR Path="/5EFF4F09" Ref="C?"  Part="1" 
+AR Path="/5EF8073C/5EFF4F09" Ref="C?"  Part="1" 
+AR Path="/5F64D560/5EFF4F09" Ref="C30"  Part="1" 
+F 0 "C30" H 3500 6850 50  0000 L CNN
+F 1 "0.1u" H 3500 6750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3400 6800 50  0001 C CNN
+F 3 "~" H 3400 6800 50  0001 C CNN
+	1    3400 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 7000 3400 6950
+Wire Wire Line
+	3400 6950 3800 6950
+Connection ~ 3400 6950
+Wire Wire Line
+	3400 6950 3400 6900
+Wire Wire Line
+	3800 6250 3400 6250
+Wire Wire Line
+	3400 6250 3400 6200
+Wire Wire Line
+	3400 6300 3400 6250
+Connection ~ 3400 6250
+Wire Wire Line
+	3400 6500 3400 6600
+$Comp
+L power:GND #PWR?
+U 1 1 5EFF4F1C
+P 3200 6750
+AR Path="/5EE15687/5EFF4F1C" Ref="#PWR?"  Part="1" 
+AR Path="/5EFF4F1C" Ref="#PWR?"  Part="1" 
+AR Path="/5EF8073C/5EFF4F1C" Ref="#PWR?"  Part="1" 
+AR Path="/5F64D560/5EFF4F1C" Ref="#PWR047"  Part="1" 
+F 0 "#PWR047" H 3200 6500 50  0001 C CNN
+F 1 "GND" H 3205 6577 50  0000 C CNN
+F 2 "" H 3200 6750 50  0001 C CNN
+F 3 "" H 3200 6750 50  0001 C CNN
+	1    3200 6750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 6750 3200 6600
+Wire Wire Line
+	3200 6600 3400 6600
+Connection ~ 3400 6600
+Wire Wire Line
+	3400 6600 3400 6700
+$Comp
+L Device:C_Small C?
+U 1 1 5EFF4F2A
+P 3800 6600
+AR Path="/5EFF4F2A" Ref="C?"  Part="1" 
+AR Path="/5EF8073C/5EFF4F2A" Ref="C?"  Part="1" 
+AR Path="/5F64D560/5EFF4F2A" Ref="C31"  Part="1" 
+F 0 "C31" H 3900 6650 50  0000 L CNN
+F 1 "0.1u" H 3900 6550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3800 6600 50  0001 C CNN
+F 3 "~" H 3800 6600 50  0001 C CNN
+	1    3800 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 6250 3800 6500
+Wire Wire Line
+	3800 6700 3800 6950
+Wire Wire Line
+	4150 6250 3800 6250
+Connection ~ 3800 6250
+Wire Wire Line
+	4150 6950 3800 6950
+Connection ~ 3800 6950
+Wire Wire Line
+	4150 6300 4150 6250
+Wire Wire Line
+	4150 6900 4150 6950
+$Comp
+L Device:C_Small C?
+U 1 1 5F0067C4
+P 5100 6400
+AR Path="/5F0067C4" Ref="C?"  Part="1" 
+AR Path="/5EF8073C/5F0067C4" Ref="C?"  Part="1" 
+AR Path="/5F64D560/5F0067C4" Ref="C32"  Part="1" 
+F 0 "C32" H 5200 6450 50  0000 L CNN
+F 1 "0.1u" H 5200 6350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5100 6400 50  0001 C CNN
+F 3 "~" H 5100 6400 50  0001 C CNN
+	1    5100 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9VA #PWR?
+U 1 1 5F0067CE
+P 5100 6200
+AR Path="/5EE15687/5F0067CE" Ref="#PWR?"  Part="1" 
+AR Path="/5F0067CE" Ref="#PWR?"  Part="1" 
+AR Path="/5EF8073C/5F0067CE" Ref="#PWR?"  Part="1" 
+AR Path="/5F64D560/5F0067CE" Ref="#PWR052"  Part="1" 
+F 0 "#PWR052" H 5100 6075 50  0001 C CNN
+F 1 "+9VA" H 5115 6373 50  0000 C CNN
+F 2 "" H 5100 6200 50  0001 C CNN
+F 3 "" H 5100 6200 50  0001 C CNN
+	1    5100 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-9VA #PWR?
+U 1 1 5F0067D8
+P 5100 7000
+AR Path="/5EE15687/5F0067D8" Ref="#PWR?"  Part="1" 
+AR Path="/5EF8073C/5F0067D8" Ref="#PWR?"  Part="1" 
+AR Path="/5F0067D8" Ref="#PWR?"  Part="1" 
+AR Path="/5F64D560/5F0067D8" Ref="#PWR053"  Part="1" 
+F 0 "#PWR053" H 5100 6875 50  0001 C CNN
+F 1 "-9VA" H 5115 7173 50  0000 C CNN
+F 2 "" H 5100 7000 50  0001 C CNN
+F 3 "" H 5100 7000 50  0001 C CNN
+	1    5100 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F0067E2
+P 5100 6800
+AR Path="/5F0067E2" Ref="C?"  Part="1" 
+AR Path="/5EF8073C/5F0067E2" Ref="C?"  Part="1" 
+AR Path="/5F64D560/5F0067E2" Ref="C33"  Part="1" 
+F 0 "C33" H 5200 6850 50  0000 L CNN
+F 1 "0.1u" H 5200 6750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5100 6800 50  0001 C CNN
+F 3 "~" H 5100 6800 50  0001 C CNN
+	1    5100 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 7000 5100 6950
+Wire Wire Line
+	5100 6950 5500 6950
+Connection ~ 5100 6950
+Wire Wire Line
+	5100 6950 5100 6900
+Wire Wire Line
+	5500 6250 5100 6250
+Wire Wire Line
+	5100 6250 5100 6200
+Wire Wire Line
+	5100 6300 5100 6250
+Connection ~ 5100 6250
+Wire Wire Line
+	5100 6500 5100 6600
+$Comp
+L power:GND #PWR?
+U 1 1 5F0067F5
+P 4900 6750
+AR Path="/5EE15687/5F0067F5" Ref="#PWR?"  Part="1" 
+AR Path="/5F0067F5" Ref="#PWR?"  Part="1" 
+AR Path="/5EF8073C/5F0067F5" Ref="#PWR?"  Part="1" 
+AR Path="/5F64D560/5F0067F5" Ref="#PWR051"  Part="1" 
+F 0 "#PWR051" H 4900 6500 50  0001 C CNN
+F 1 "GND" H 4905 6577 50  0000 C CNN
+F 2 "" H 4900 6750 50  0001 C CNN
+F 3 "" H 4900 6750 50  0001 C CNN
+	1    4900 6750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 6750 4900 6600
+Wire Wire Line
+	4900 6600 5100 6600
+Connection ~ 5100 6600
+Wire Wire Line
+	5100 6600 5100 6700
+$Comp
+L Device:C_Small C?
+U 1 1 5F006803
+P 5500 6600
+AR Path="/5F006803" Ref="C?"  Part="1" 
+AR Path="/5EF8073C/5F006803" Ref="C?"  Part="1" 
+AR Path="/5F64D560/5F006803" Ref="C34"  Part="1" 
+F 0 "C34" H 5600 6650 50  0000 L CNN
+F 1 "0.1u" H 5600 6550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5500 6600 50  0001 C CNN
+F 3 "~" H 5500 6600 50  0001 C CNN
+	1    5500 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 6250 5500 6500
+Wire Wire Line
+	5500 6700 5500 6950
+Wire Wire Line
+	5850 6250 5500 6250
+Connection ~ 5500 6250
+Wire Wire Line
+	5850 6950 5500 6950
+Connection ~ 5500 6950
+Wire Wire Line
+	5850 6300 5850 6250
+Wire Wire Line
+	5850 6900 5850 6950
+$Comp
+L Amplifier_Operational:NJM4558 U10
+U 3 1 5F014055
+P 5950 6600
+F 0 "U10" H 5908 6646 50  0000 L CNN
+F 1 "NJM4580CG" H 5908 6555 50  0000 L CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 5950 6600 50  0001 C CNN
+F 3 "http://www.njr.com/semicon/PDF/NJM4558_NJM4559_E.pdf" H 5950 6600 50  0001 C CNN
+	3    5950 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9VA #PWR?
+U 1 1 5F045951
+P 6500 3850
+AR Path="/5EE15687/5F045951" Ref="#PWR?"  Part="1" 
+AR Path="/5F045951" Ref="#PWR?"  Part="1" 
+AR Path="/5EF8073C/5F045951" Ref="#PWR?"  Part="1" 
+AR Path="/5F64D560/5F045951" Ref="#PWR057"  Part="1" 
+F 0 "#PWR057" H 6500 3725 50  0001 C CNN
+F 1 "+9VA" H 6515 4023 50  0000 C CNN
+F 2 "" H 6500 3850 50  0001 C CNN
+F 3 "" H 6500 3850 50  0001 C CNN
+	1    6500 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R31
+U 1 1 5F04595B
+P 6500 4000
+F 0 "R31" H 6441 3954 50  0000 R CNN
+F 1 "4.7k" H 6441 4045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6500 4000 50  0001 C CNN
+F 3 "~" H 6500 4000 50  0001 C CNN
+	1    6500 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6500 3900 6500 3850
+$Comp
+L Device:R_Small R32
+U 1 1 5F05083C
+P 6500 4300
+F 0 "R32" H 6441 4254 50  0000 R CNN
+F 1 "4.7k" H 6441 4345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6500 4300 50  0001 C CNN
+F 3 "~" H 6500 4300 50  0001 C CNN
+	1    6500 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR058
+U 1 1 5F050846
+P 6500 4450
+F 0 "#PWR058" H 6500 4200 50  0001 C CNN
+F 1 "GND" H 6505 4277 50  0000 C CNN
+F 2 "" H 6500 4450 50  0001 C CNN
+F 3 "" H 6500 4450 50  0001 C CNN
+	1    6500 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4450 6500 4400
+$Comp
+L Device:R_Small R35
+U 1 1 5F088F63
+P 7800 2450
+F 0 "R35" V 7996 2450 50  0000 C CNN
+F 1 "470" V 7905 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7800 2450 50  0001 C CNN
+F 3 "~" H 7800 2450 50  0001 C CNN
+	1    7800 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R36
+U 1 1 5F089864
+P 7800 3650
+F 0 "R36" V 7996 3650 50  0000 C CNN
+F 1 "470" V 7905 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7800 3650 50  0001 C CNN
+F 3 "~" H 7800 3650 50  0001 C CNN
+	1    7800 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7700 3650 7650 3650
+$Comp
+L Device:LED D11
+U 1 1 5F08ED20
+P 8050 3900
+F 0 "D11" V 8089 3782 50  0000 R CNN
+F 1 "LED_RED" V 7998 3782 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8050 3900 50  0001 C CNN
+F 3 "~" H 8050 3900 50  0001 C CNN
+	1    8050 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR062
+U 1 1 5F0909A9
+P 8050 4150
+F 0 "#PWR062" H 8050 3900 50  0001 C CNN
+F 1 "GND" H 8055 3977 50  0000 C CNN
+F 2 "" H 8050 4150 50  0001 C CNN
+F 3 "" H 8050 4150 50  0001 C CNN
+	1    8050 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 4150 8050 4050
+Wire Wire Line
+	8050 3750 8050 3650
+Wire Wire Line
+	8050 3650 7900 3650
+$Comp
+L power:GND #PWR061
+U 1 1 5F09A2AC
+P 8050 2950
+F 0 "#PWR061" H 8050 2700 50  0001 C CNN
+F 1 "GND" H 8055 2777 50  0000 C CNN
+F 2 "" H 8050 2950 50  0001 C CNN
+F 3 "" H 8050 2950 50  0001 C CNN
+	1    8050 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2950 8050 2850
+Wire Wire Line
+	8050 2550 8050 2450
+Wire Wire Line
+	8050 2450 7900 2450
+Wire Wire Line
+	7700 2450 7650 2450
+Text Notes 8100 3500 0    79   ~ 0
+Peak\n1/2 Vcc
+$Comp
+L Amplifier_Operational:NJM4558 U8
+U 1 1 5EF4882C
+P 3950 3950
+F 0 "U8" H 3950 4250 50  0000 C CNN
+F 1 "NJM4580CG" H 4050 4150 50  0000 C CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 3950 3950 50  0001 C CNN
+F 3 "http://www.njr.com/semicon/PDF/NJM4558_NJM4559_E.pdf" H 3950 3950 50  0001 C CNN
+	1    3950 3950
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3450 4050 3650 4050
+$Comp
+L Device:D D9
+U 1 1 5F143FD2
+P 3950 3550
+F 0 "D9" H 3800 3700 50  0000 C CNN
+F 1 "SS2040" H 4050 3700 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 3950 3550 50  0001 C CNN
+F 3 "~" H 3950 3550 50  0001 C CNN
+	1    3950 3550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 3850 3550 3850
+Wire Wire Line
+	3550 3850 3550 3550
+Wire Wire Line
+	3550 3550 3800 3550
+Wire Wire Line
+	4100 3550 4300 3550
+Wire Wire Line
+	4300 3550 4300 3950
+Wire Wire Line
+	4300 3950 4250 3950
+$Comp
+L Device:D D12
+U 1 1 5F160706
+P 4500 3950
+F 0 "D12" H 4500 4200 50  0000 C CNN
+F 1 "SS2040" H 4550 4100 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 4500 3950 50  0001 C CNN
+F 3 "~" H 4500 3950 50  0001 C CNN
+	1    4500 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4350 3950 4300 3950
+Connection ~ 4300 3950
+$Comp
+L power:GND #PWR045
+U 1 1 5F198707
+P 4700 4350
+F 0 "#PWR045" H 4700 4100 50  0001 C CNN
+F 1 "GND" H 4705 4177 50  0000 C CNN
+F 2 "" H 4700 4350 50  0001 C CNN
+F 3 "" H 4700 4350 50  0001 C CNN
+	1    4700 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4350 4700 4300
+Wire Wire Line
+	4700 4300 5100 4300
+Wire Wire Line
+	5500 4300 5500 4250
+Connection ~ 4700 4300
+Wire Wire Line
+	4700 4300 4700 4250
+Wire Wire Line
+	4700 4050 4700 3950
+Wire Wire Line
+	4700 3950 4650 3950
+Wire Wire Line
+	4700 3950 5100 3950
+Wire Wire Line
+	5500 3950 5500 4050
+Connection ~ 4700 3950
+Wire Wire Line
+	5600 3950 5500 3950
+Connection ~ 5500 3950
+Wire Wire Line
+	5600 3750 5500 3750
+Wire Wire Line
+	5500 3750 5500 3550
+Wire Wire Line
+	5500 3550 6250 3550
+Wire Wire Line
+	6250 3550 6250 3850
+Wire Wire Line
+	6250 3850 6200 3850
+Wire Wire Line
+	6250 3550 6250 3300
+Wire Wire Line
+	6250 3300 3550 3300
+Wire Wire Line
+	3550 3300 3550 3550
+Connection ~ 6250 3550
+Connection ~ 3550 3550
+$Comp
+L Amplifier_Operational:NJM4558 U9
+U 2 1 5F24CE0D
+P 5900 2350
+F 0 "U9" H 5950 2650 50  0000 C CNN
+F 1 "NJM4580CG" H 6050 2550 50  0000 C CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 5900 2350 50  0001 C CNN
+F 3 "http://www.njr.com/semicon/PDF/NJM4558_NJM4559_E.pdf" H 5900 2350 50  0001 C CNN
+	2    5900 2350
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R21
+U 1 1 5F24CE17
+P 5500 2650
+F 0 "R21" H 5350 2700 50  0000 C CNN
+F 1 "470k" H 5350 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5500 2650 50  0001 C CNN
+F 3 "~" H 5500 2650 50  0001 C CNN
+	1    5500 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP_Small C47
+U 1 1 5F24CE21
+P 4700 2650
+F 0 "C47" H 4788 2696 50  0000 L CNN
+F 1 "0.47u" H 4788 2605 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 4700 2650 50  0001 C CNN
+F 3 "~" H 4700 2650 50  0001 C CNN
+	1    4700 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:NJM4558 U9
+U 1 1 5F24CE2B
+P 3950 2450
+F 0 "U9" H 3950 2750 50  0000 C CNN
+F 1 "NJM4580CG" H 4050 2650 50  0000 C CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 3950 2450 50  0001 C CNN
+F 3 "http://www.njr.com/semicon/PDF/NJM4558_NJM4559_E.pdf" H 3950 2450 50  0001 C CNN
+	1    3950 2450
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3450 2550 3650 2550
+$Comp
+L Device:D D8
+U 1 1 5F24CE36
+P 3950 2050
+F 0 "D8" H 3800 2200 50  0000 C CNN
+F 1 "SS2040" H 4050 2200 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 3950 2050 50  0001 C CNN
+F 3 "~" H 3950 2050 50  0001 C CNN
+	1    3950 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 2350 3550 2350
+Wire Wire Line
+	3550 2350 3550 2050
+Wire Wire Line
+	3550 2050 3800 2050
+Wire Wire Line
+	4100 2050 4300 2050
+Wire Wire Line
+	4300 2050 4300 2450
+Wire Wire Line
+	4300 2450 4250 2450
+$Comp
+L Device:D D10
+U 1 1 5F24CE46
+P 4500 2450
+F 0 "D10" H 4550 2700 50  0000 C CNN
+F 1 "SS2040" H 4550 2600 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 4500 2450 50  0001 C CNN
+F 3 "~" H 4500 2450 50  0001 C CNN
+	1    4500 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4350 2450 4300 2450
+Connection ~ 4300 2450
+$Comp
+L power:GND #PWR037
+U 1 1 5F24CE52
+P 4700 2850
+F 0 "#PWR037" H 4700 2600 50  0001 C CNN
+F 1 "GND" H 4705 2677 50  0000 C CNN
+F 2 "" H 4700 2850 50  0001 C CNN
+F 3 "" H 4700 2850 50  0001 C CNN
+	1    4700 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2850 4700 2800
+Wire Wire Line
+	4700 2800 5100 2800
+Wire Wire Line
+	5500 2800 5500 2750
+Connection ~ 4700 2800
+Wire Wire Line
+	4700 2800 4700 2750
+Wire Wire Line
+	4700 2550 4700 2450
+Wire Wire Line
+	4700 2450 4650 2450
+Wire Wire Line
+	4700 2450 5100 2450
+Wire Wire Line
+	5500 2450 5500 2550
+Connection ~ 4700 2450
+Wire Wire Line
+	5600 2450 5500 2450
+Connection ~ 5500 2450
+Wire Wire Line
+	5600 2250 5500 2250
+Wire Wire Line
+	5500 2250 5500 2050
+Wire Wire Line
+	5500 2050 6250 2050
+Wire Wire Line
+	6250 2050 6250 2350
+Wire Wire Line
+	6250 2350 6200 2350
+Wire Wire Line
+	6250 2050 6250 1800
+Wire Wire Line
+	6250 1800 3550 1800
+Wire Wire Line
+	3550 1800 3550 2050
+Connection ~ 6250 2050
+Connection ~ 3550 2050
+Text Notes 5300 4450 0    50   ~ 0
+220ms
+$Comp
+L Device:LED D13
+U 1 1 5F2B5F08
+P 8050 2700
+F 0 "D13" V 8089 2582 50  0000 R CNN
+F 1 "LED_RED" V 7998 2582 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8050 2700 50  0001 C CNN
+F 3 "~" H 8050 2700 50  0001 C CNN
+	1    8050 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 2550 6900 2550
+Wire Wire Line
+	6900 3750 7050 3750
+Wire Wire Line
+	6500 4100 6500 4150
+Wire Wire Line
+	7050 2350 6250 2350
+Connection ~ 6250 2350
+Wire Wire Line
+	7050 3550 6250 3550
+Wire Wire Line
+	6500 4150 6900 4150
+Wire Wire Line
+	6900 2550 6900 3750
+Connection ~ 6500 4150
+Wire Wire Line
+	6500 4150 6500 4200
+Connection ~ 6900 3750
+Wire Wire Line
+	6900 3750 6900 4150
+$Comp
+L Amplifier_Operational:NJM4558 U9
+U 3 1 5EFFE1E9
+P 4050 6600
+F 0 "U9" H 3862 6646 50  0000 R CNN
+F 1 "NJM4580CG" H 3862 6555 50  0000 R CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 4050 6600 50  0001 C CNN
+F 3 "http://www.njr.com/semicon/PDF/NJM4558_NJM4559_E.pdf" H 4050 6600 50  0001 C CNN
+	3    4050 6600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C49
+U 1 1 5F129420
+P 5100 4150
+F 0 "C49" H 5192 4196 50  0000 L CNN
+F 1 "option_footprint" H 4800 4400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5100 4150 50  0001 C CNN
+F 3 "~" H 5100 4150 50  0001 C CNN
+	1    5100 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4050 5100 3950
+Connection ~ 5100 3950
+Wire Wire Line
+	5100 3950 5500 3950
+Wire Wire Line
+	5100 4250 5100 4300
+Connection ~ 5100 4300
+Wire Wire Line
+	5100 4300 5500 4300
+$Comp
+L Device:C_Small C48
+U 1 1 5F15AF2D
+P 5100 2650
+F 0 "C48" H 5192 2696 50  0000 L CNN
+F 1 "option_footprint" H 4800 2900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5100 2650 50  0001 C CNN
+F 3 "~" H 5100 2650 50  0001 C CNN
+	1    5100 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2550 5100 2450
+Connection ~ 5100 2450
+Wire Wire Line
+	5100 2450 5500 2450
+Wire Wire Line
+	5100 2750 5100 2800
+Connection ~ 5100 2800
+Wire Wire Line
+	5100 2800 5500 2800
+$EndSCHEMATC
