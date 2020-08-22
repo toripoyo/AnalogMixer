@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 5
 Title "Anarogu Mikisa-"
-Date "2020-06-11"
-Rev ""
+Date "2020-08-18"
+Rev "B"
 Comp "Poyo"
 Comment1 ""
 Comment2 ""
@@ -152,7 +152,7 @@ L Device:R_Small R13
 U 1 1 5EEA488D
 P 5850 2050
 F 0 "R13" V 6046 2050 50  0000 C CNN
-F 1 "10k" V 5955 2050 50  0000 C CNN
+F 1 "33k" V 5955 2050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5850 2050 50  0001 C CNN
 F 3 "~" H 5850 2050 50  0001 C CNN
 	1    5850 2050
@@ -331,7 +331,7 @@ L Device:R_Small R14
 U 1 1 5EEBCD11
 P 5850 3850
 F 0 "R14" V 6046 3850 50  0000 C CNN
-F 1 "10k" V 5955 3850 50  0000 C CNN
+F 1 "33k" V 5955 3850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5850 3850 50  0001 C CNN
 F 3 "~" H 5850 3850 50  0001 C CNN
 	1    5850 3850
@@ -393,7 +393,7 @@ L Device:R_POT_Dual_Separate RV1
 U 1 1 5EF32168
 P 8250 2400
 F 0 "RV1" H 8181 2446 50  0000 R CNN
-F 1 "RV10kA" H 8181 2355 50  0000 R CNN
+F 1 "RK0972-A10K" H 8181 2355 50  0000 R CNN
 F 2 "toripoyo:RD925G-QA1" H 8250 2400 50  0001 C CNN
 F 3 "~" H 8250 2400 50  0001 C CNN
 	1    8250 2400
@@ -440,7 +440,7 @@ L Device:R_POT_Dual_Separate RV1
 U 2 1 5EF4CA26
 P 8250 1500
 F 0 "RV1" H 8181 1546 50  0000 R CNN
-F 1 "RV10kA" H 8181 1455 50  0000 R CNN
+F 1 "RK0972-A10K" H 8181 1455 50  0000 R CNN
 F 2 "toripoyo:RD925G-QA1" H 8250 1500 50  0001 C CNN
 F 3 "~" H 8250 1500 50  0001 C CNN
 	2    8250 1500
@@ -494,74 +494,6 @@ Wire Wire Line
 	9200 2150 9200 2500
 Wire Wire Line
 	9400 2250 9400 2350
-$Comp
-L Device:R_POT_Dual_Separate RV2
-U 1 1 5EF9C197
-P 9900 5700
-F 0 "RV2" H 9831 5746 50  0000 R CNN
-F 1 "RV10kA" H 9831 5655 50  0000 R CNN
-F 2 "toripoyo:RD925G-QA1" H 9900 5700 50  0001 C CNN
-F 3 "~" H 9900 5700 50  0001 C CNN
-	1    9900 5700
-	1    0    0    1   
-$EndComp
-Text GLabel 8250 5450 0    50   Input ~ 0
-mix_out_L
-Wire Wire Line
-	8250 5450 8350 5450
-Wire Wire Line
-	8350 5450 8350 5550
-$Comp
-L power:GND #PWR?
-U 1 1 5EF9C1B1
-P 8350 6000
-AR Path="/5EE15687/5EF9C1B1" Ref="#PWR?"  Part="1" 
-AR Path="/5EF9C1B1" Ref="#PWR016"  Part="1" 
-F 0 "#PWR016" H 8350 5750 50  0001 C CNN
-F 1 "GND" H 8355 5827 50  0000 C CNN
-F 2 "" H 8350 6000 50  0001 C CNN
-F 3 "" H 8350 6000 50  0001 C CNN
-	1    8350 6000
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	8350 6000 8350 5850
-$Comp
-L Device:R_POT_Dual_Separate RV2
-U 2 1 5EF9C1C6
-P 8350 5700
-F 0 "RV2" H 8281 5746 50  0000 R CNN
-F 1 "RV10kA" H 8281 5655 50  0000 R CNN
-F 2 "toripoyo:RD925G-QA1" H 8350 5700 50  0001 C CNN
-F 3 "~" H 8350 5700 50  0001 C CNN
-	2    8350 5700
-	1    0    0    1   
-$EndComp
-Text GLabel 9800 5450 0    50   Input ~ 0
-mix_out_R
-Wire Wire Line
-	9800 5450 9900 5450
-Wire Wire Line
-	9900 5450 9900 5550
-$Comp
-L power:GND #PWR?
-U 1 1 5EF9C1DF
-P 9900 6000
-AR Path="/5EE15687/5EF9C1DF" Ref="#PWR?"  Part="1" 
-AR Path="/5EF9C1DF" Ref="#PWR019"  Part="1" 
-F 0 "#PWR019" H 9900 5750 50  0001 C CNN
-F 1 "GND" H 9905 5827 50  0000 C CNN
-F 2 "" H 9900 6000 50  0001 C CNN
-F 3 "" H 9900 6000 50  0001 C CNN
-	1    9900 6000
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	9900 6000 9900 5850
-Text GLabel 8700 5700 2    50   Input ~ 0
-BT_Line_out_L
-Text GLabel 10250 5700 2    50   Input ~ 0
-BT_Line_out_R
 $Sheet
 S 1150 2200 800  300 
 U 5F64C24C
@@ -574,10 +506,6 @@ U 5F64D560
 F0 "LevelMeter" 50
 F1 "LevelMeter.sch" 50
 $EndSheet
-Wire Wire Line
-	10050 5700 10250 5700
-Wire Wire Line
-	8500 5700 8700 5700
 Wire Wire Line
 	8400 1900 9200 1900
 Wire Wire Line
@@ -651,8 +579,6 @@ Text Notes 10350 2000 0    79   ~ 0
 Monitor
 Text Notes 9600 3900 0    79   ~ 0
 Line Out
-Text Notes 8250 5250 0    79   ~ 0
-Bluetooth/Line Out
 $Comp
 L Device:C_Small C1
 U 1 1 5F413F87
@@ -1047,7 +973,7 @@ L Connector:AudioJack3 J2
 U 1 1 5EFA426B
 P 10000 2150
 F 0 "J2" H 9720 2083 50  0000 R CNN
-F 1 "AudioJack3" H 9720 2174 50  0000 R CNN
+F 1 "PJ-3420" H 9720 2174 50  0000 R CNN
 F 2 "toripoyo:PJ-3420" H 10000 2150 50  0001 C CNN
 F 3 "~" H 10000 2150 50  0001 C CNN
 	1    10000 2150
@@ -1058,7 +984,7 @@ L Connector:AudioJack3 J1
 U 1 1 5EFC5025
 P 9250 4050
 F 0 "J1" H 8970 3983 50  0000 R CNN
-F 1 "AudioJack3" H 8970 4074 50  0000 R CNN
+F 1 "PJ-3420" H 8970 4074 50  0000 R CNN
 F 2 "toripoyo:PJ-3420" H 9250 4050 50  0001 C CNN
 F 3 "~" H 9250 4050 50  0001 C CNN
 	1    9250 4050
@@ -1138,10 +1064,6 @@ Wire Wire Line
 Wire Wire Line
 	2100 5400 2100 5300
 Connection ~ 1800 5400
-Text GLabel 8550 3950 0    50   Input ~ 0
-BT_Line_out_L
-Text GLabel 8550 4050 0    50   Input ~ 0
-BT_Line_out_R
 $Comp
 L Device:R_Small R1
 U 1 1 5F289EA8
@@ -1174,4 +1096,8 @@ Wire Wire Line
 	9700 2150 9800 2150
 Wire Wire Line
 	9800 2050 9700 2050
+Text GLabel 8550 3950 0    50   Input ~ 0
+mix_out_L
+Text GLabel 8550 4050 0    50   Input ~ 0
+mix_out_R
 $EndSCHEMATC
