@@ -1,4 +1,4 @@
-update=2020/08/23 2:07:00
+update=2020/08/24 9:02:43
 version=1
 last_client=kicad
 [general]
@@ -12,11 +12,21 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=C:/Users/user1/GoogleDrive/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
 LastNetListRead=
-CopperLayerCount=4
+CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -33,6 +43,7 @@ TrackWidth2=0.254
 TrackWidth3=0.4
 TrackWidth4=0.5
 TrackWidth5=0.75
+TrackWidth6=1
 ViaDiameter1=0.8
 ViaDrill1=0.4
 dPairWidth1=0.2
@@ -67,13 +78,13 @@ Name=F.Cu
 Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
-Name=GND
-Type=1
-Enabled=1
+Name=In1.Cu
+Type=0
+Enabled=0
 [pcbnew/Layer.In2.Cu]
-Name=-V
-Type=1
-Enabled=1
+Name=In2.Cu
+Type=0
+Enabled=0
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0
@@ -187,7 +198,7 @@ Name=In30.Cu
 Type=0
 Enabled=0
 [pcbnew/Layer.B.Cu]
-Name=+V
+Name=GND
 Type=1
 Enabled=1
 [pcbnew/Layer.B.Adhes]
@@ -251,13 +262,3 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=C:/Users/user1/GoogleDrive/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1
