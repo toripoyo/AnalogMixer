@@ -140,8 +140,8 @@ $Comp
 L Device:R_Small R7
 U 1 1 5EEA2F1E
 P 4600 2000
-F 0 "R7" V 4404 2000 50  0000 C CNN
-F 1 "47k" V 4500 2000 50  0000 C CNN
+F 0 "R7" V 4800 2000 50  0000 C CNN
+F 1 "47k" V 4700 2000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4600 2000 50  0001 C CNN
 F 3 "~" H 4600 2000 50  0001 C CNN
 	1    4600 2000
@@ -880,80 +880,6 @@ F 3 "~" H 9250 4050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H1
-U 1 1 5F0C9455
-P 1200 5200
-F 0 "H1" H 1300 5249 50  0000 L CNN
-F 1 "MountingHole_Pad" H 1150 5600 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 1200 5200 50  0001 C CNN
-F 3 "~" H 1200 5200 50  0001 C CNN
-	1    1200 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H2
-U 1 1 5F0CA32C
-P 1500 5200
-F 0 "H2" H 1600 5249 50  0000 L CNN
-F 1 "MountingHole_Pad" H 1150 5400 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 1500 5200 50  0001 C CNN
-F 3 "~" H 1500 5200 50  0001 C CNN
-	1    1500 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H3
-U 1 1 5F0CA5BB
-P 1800 5200
-F 0 "H3" H 1900 5249 50  0000 L CNN
-F 1 "MountingHole_Pad" H 1900 5158 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 1800 5200 50  0001 C CNN
-F 3 "~" H 1800 5200 50  0001 C CNN
-	1    1800 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H4
-U 1 1 5F0CA769
-P 2100 5200
-F 0 "H4" H 2200 5249 50  0000 L CNN
-F 1 "MountingHole_Pad" H 2200 5158 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 2100 5200 50  0001 C CNN
-F 3 "~" H 2100 5200 50  0001 C CNN
-	1    2100 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5F0CA9AD
-P 1200 5500
-F 0 "#PWR02" H 1200 5250 50  0001 C CNN
-F 1 "GND" H 1205 5327 50  0000 C CNN
-F 2 "" H 1200 5500 50  0001 C CNN
-F 3 "" H 1200 5500 50  0001 C CNN
-	1    1200 5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1200 5500 1200 5400
-Wire Wire Line
-	1200 5400 1500 5400
-Wire Wire Line
-	1500 5400 1500 5300
-Connection ~ 1200 5400
-Wire Wire Line
-	1200 5400 1200 5300
-Wire Wire Line
-	1500 5400 1800 5400
-Wire Wire Line
-	1800 5400 1800 5300
-Connection ~ 1500 5400
-Wire Wire Line
-	1800 5400 2100 5400
-Wire Wire Line
-	2100 5400 2100 5300
-Connection ~ 1800 5400
-$Comp
 L Device:R_Small R15
 U 1 1 5F289EA8
 P 9600 2050
@@ -1031,4 +957,48 @@ Wire Wire Line
 Connection ~ 4650 7000
 Wire Wire Line
 	4650 7000 4650 7050
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FC2B0F1
+P 1175 5200
+F 0 "H1" H 1275 5200 50  0000 L CNN
+F 1 "MountingHole" H 1275 5155 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1175 5200 50  0001 C CNN
+F 3 "~" H 1175 5200 50  0001 C CNN
+	1    1175 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FC2BE98
+P 1475 5200
+F 0 "H2" H 1575 5200 50  0000 L CNN
+F 1 "MountingHole" H 1575 5155 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1475 5200 50  0001 C CNN
+F 3 "~" H 1475 5200 50  0001 C CNN
+	1    1475 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5FC2C151
+P 1775 5200
+F 0 "H3" H 1875 5200 50  0000 L CNN
+F 1 "MountingHole" H 1875 5155 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1775 5200 50  0001 C CNN
+F 3 "~" H 1775 5200 50  0001 C CNN
+	1    1775 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5FC2C38E
+P 2075 5200
+F 0 "H4" H 2175 5200 50  0000 L CNN
+F 1 "MountingHole" H 2175 5155 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2075 5200 50  0001 C CNN
+F 3 "~" H 2075 5200 50  0001 C CNN
+	1    2075 5200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

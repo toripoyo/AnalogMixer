@@ -23,31 +23,6 @@ X ~ T 200 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Barrel_Jack_Switch
-#
-DEF Connector_Barrel_Jack_Switch J 0 20 Y N 1 F N
-F0 "J" 0 210 50 H V C CNN
-F1 "Connector_Barrel_Jack_Switch" 0 -200 50 H V C CNN
-F2 "" 50 -40 50 H I C CNN
-F3 "" 50 -40 50 H I C CNN
-$FPLIST
- BarrelJack*
-$ENDFPLIST
-DRAW
-A -130 100 25 901 -901 0 1 10 F -130 125 -130 75
-A -130 100 25 901 -901 0 1 10 N -130 125 -130 75
-S -200 150 200 -150 0 1 10 f
-S 145 125 -130 75 0 1 10 F
-P 2 0 1 10 50 -90 75 -65 N
-P 2 0 1 10 200 100 150 100 N
-P 4 0 1 10 200 0 50 0 50 -90 25 -65 N
-P 6 0 1 10 -150 -100 -100 -100 -50 -50 0 -100 100 -100 200 -100 N
-X ~ 1 300 100 100 L 50 50 1 1 P
-X ~ 2 300 -100 100 L 50 50 1 1 P
-X ~ 3 300 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Connector_Generic_Conn_01x03
 #
 DEF Connector_Generic_Conn_01x03 J 0 40 Y N 1 F N
@@ -66,6 +41,29 @@ S -50 150 50 -150 1 1 10 f
 X Pin_1 1 -200 100 150 R 50 50 1 1 P
 X Pin_2 2 -200 0 150 R 50 50 1 1 P
 X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_02x02_Counter_Clockwise
+#
+DEF Connector_Generic_Conn_02x02_Counter_Clockwise J 0 40 Y N 1 F N
+F0 "J" 50 100 50 H V C CNN
+F1 "Connector_Generic_Conn_02x02_Counter_Clockwise" 50 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_2x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 150 -150 1 1 10 f
+S 150 -95 100 -105 1 1 6 N
+S 150 5 100 -5 1 1 6 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+X Pin_3 3 300 -100 150 L 50 50 1 1 P
+X Pin_4 4 300 0 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -120,28 +118,6 @@ P 2 0 1 13 -60 -20 60 -20 N
 P 2 0 1 12 -60 20 60 20 N
 X ~ 1 0 100 80 D 50 50 1 1 P
 X ~ 2 0 -100 80 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_D_Zener
-#
-DEF Device_D_Zener D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "Device_D_Zener" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- TO-???*
- *_Diode_*
- *SingleDiode*
- D_*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 50 0 -50 0 N
-P 3 0 1 10 -50 -50 -50 50 -30 50 N
-P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -280,41 +256,18 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Jumper_SolderJumper_2_Open
+# Mechanical_MountingHole
 #
-DEF Jumper_SolderJumper_2_Open JP 0 0 Y N 1 F N
-F0 "JP" 0 80 50 H V C CNN
-F1 "Jumper_SolderJumper_2_Open" 0 -100 50 H V C CNN
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- SolderJumper*Open*
+ MountingHole*
 $ENDFPLIST
 DRAW
-A -10 0 40 901 -901 0 1 0 N -10 40 -10 -40
-A -10 0 40 901 -901 0 1 0 F -10 40 -10 -40
-A 10 0 40 -899 899 0 1 0 N 10 -40 10 40
-A 10 0 40 -899 899 0 1 0 F 10 -40 10 40
-P 2 0 1 0 -10 40 -10 -40 N
-P 2 0 1 0 10 40 10 -40 N
-X A 1 -150 0 100 R 50 50 1 1 P
-X B 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Mechanical_MountingHole_Pad
-#
-DEF Mechanical_MountingHole_Pad H 0 40 N N 1 F N
-F0 "H" 0 250 50 H V C CNN
-F1 "Mechanical_MountingHole_Pad" 0 175 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- MountingHole*Pad*
-$ENDFPLIST
-DRAW
-C 0 50 50 0 1 50 N
-X 1 1 0 -100 100 U 50 50 1 1 I
+C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
@@ -441,6 +394,23 @@ X C 6 200 -100 100 L 50 50 2 1 P
 ENDDRAW
 ENDDEF
 #
+# Switch_SW_Push
+#
+DEF Switch_SW_Push SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "Switch_SW_Push" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
 # Switch_SW_SPDT
 #
 DEF Switch_SW_SPDT SW 0 0 Y N 1 F N
@@ -456,6 +426,25 @@ P 2 0 1 0 -60 10 65 90 N
 X A 1 200 100 100 L 50 50 1 1 P
 X B 2 -200 0 100 R 50 50 1 1 P
 X C 3 200 -100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# kamiya_UserShort
+#
+DEF kamiya_UserShort JP 0 0 N N 1 F N
+F0 "JP" 0 100 60 H V C CNN
+F1 "kamiya_UserShort" -50 -100 60 H I C CNN
+F2 "" 50 0 60 H V C CNN
+F3 "" 50 0 60 H V C CNN
+DRAW
+A -50 -1 49 -900 1789 0 1 0 N -50 -50 -100 0
+A -50 1 49 900 -1789 0 1 0 N -50 50 -100 0
+A 0 1 49 900 -11 0 1 0 N 0 50 50 0
+A 1 0 49 0 -911 0 1 0 N 50 0 0 -50
+P 2 0 1 0 -50 50 -50 -50 N
+P 2 0 1 0 0 50 0 -50 N
+X ~ 1 -200 0 100 R 50 50 1 1 I
+X ~ 2 150 0 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -516,6 +505,33 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
+# power_GND2
+#
+DEF power_GND2 #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND2" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND2 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GNDD
+#
+DEF power_GNDD #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GNDD" 0 -125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -50 -60 50 -80 0 1 10 F
+P 2 0 1 0 0 0 0 -60 N
+X GNDD 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
 # power_PWR_FLAG
 #
 DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
@@ -571,27 +587,6 @@ X NC 5 400 0 200 U 50 50 1 1 N
 X +Vout 6 500 0 200 U 50 50 1 1 w
 X -Vout 7 600 0 200 U 50 50 1 1 w
 X NC 8 700 0 200 U 50 50 1 1 N
-ENDDRAW
-ENDDEF
-#
-# toripoyo_SW_AKIDUKI
-#
-DEF toripoyo_SW_AKIDUKI U 0 40 Y Y 1 F N
-F0 "U" -100 100 50 H V C CNN
-F1 "toripoyo_SW_AKIDUKI" 200 100 50 H V C CNN
-F2 "" -100 100 50 H I C CNN
-F3 "" -100 100 50 H I C CNN
-DRAW
-S 0 25 400 -225 0 1 0 N
-P 2 0 1 0 0 -150 150 -150 N
-P 2 0 1 0 250 -100 150 -150 N
-P 2 0 1 0 250 -50 400 -50 N
-P 2 0 1 0 400 -150 250 -150 N
-P 3 0 1 0 250 0 150 -50 0 -50 N
-X 1A 1A -200 -50 200 R 50 50 1 1 B
-X 1B 1B 600 -50 200 L 50 50 1 1 B
-X 2A 2A -200 -150 200 R 50 50 1 1 B
-X 2B 2B 600 -150 200 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #

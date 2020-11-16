@@ -14,13 +14,12 @@
 
 - Monitor out (headphone)
 - Line out
-- Bluetooth out
+- Bluetooth out (Mix/Mic Selectable)
 
 ## Power
 
 - Micro USB
-- DC Jack
-
+- 
 ## Other
 
 - Peak warning LED
