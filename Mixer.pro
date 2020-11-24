@@ -1,4 +1,4 @@
-update=2020/11/18 3:32:18
+update=2020/11/25 1:17:44
 version=1
 last_client=kicad
 [general]
@@ -202,8 +202,8 @@ Name=In30.Cu
 Type=0
 Enabled=0
 [pcbnew/Layer.B.Cu]
-Name=GND
-Type=1
+Name=B.Cu
+Type=0
 Enabled=1
 [pcbnew/Layer.B.Adhes]
 Enabled=1
