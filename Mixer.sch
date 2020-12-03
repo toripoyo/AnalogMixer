@@ -140,8 +140,8 @@ $Comp
 L Device:R_Small R7
 U 1 1 5EEA2F1E
 P 4600 2000
-F 0 "R7" V 4800 2000 50  0000 C CNN
-F 1 "47k" V 4700 2000 50  0000 C CNN
+F 0 "R7" V 4525 2000 50  0000 C CNN
+F 1 "47k" V 4450 2000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4600 2000 50  0001 C CNN
 F 3 "~" H 4600 2000 50  0001 C CNN
 	1    4600 2000
@@ -1001,4 +1001,46 @@ F 3 "~" H 2075 5200 50  0001 C CNN
 	1    2075 5200
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C_Small C20
+U 1 1 5FD6092F
+P 4600 3500
+AR Path="/5FD6092F" Ref="C20"  Part="1" 
+AR Path="/5EF8073C/5FD6092F" Ref="C?"  Part="1" 
+F 0 "C20" V 4800 3450 50  0000 L CNN
+F 1 "22p" V 4700 3425 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4600 3500 50  0001 C CNN
+F 3 "~" H 4600 3500 50  0001 C CNN
+	1    4600 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 3500 4150 3500
+Connection ~ 4150 3500
+Wire Wire Line
+	4700 3500 5050 3500
+Wire Wire Line
+	5050 3500 5050 3800
+Connection ~ 5050 3800
+$Comp
+L Device:C_Small C19
+U 1 1 5FD6A6DC
+P 4600 1700
+AR Path="/5FD6A6DC" Ref="C19"  Part="1" 
+AR Path="/5EF8073C/5FD6A6DC" Ref="C?"  Part="1" 
+F 0 "C19" V 4800 1650 50  0000 L CNN
+F 1 "22p" V 4700 1625 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4600 1700 50  0001 C CNN
+F 3 "~" H 4600 1700 50  0001 C CNN
+	1    4600 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 1700 4150 1700
+Connection ~ 4150 1700
+Wire Wire Line
+	4700 1700 5050 1700
+Wire Wire Line
+	5050 1700 5050 2000
+Connection ~ 5050 2000
 $EndSCHEMATC

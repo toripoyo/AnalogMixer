@@ -401,7 +401,7 @@ $Comp
 L Device:C_Small C11
 U 1 1 5F42523D
 P 5350 3175
-F 0 "C11" H 5150 3225 50  0000 L CNN
+F 0 "C11" H 5150 3250 50  0000 L CNN
 F 1 "220u/6.3V" H 4900 3075 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 5350 3175 50  0001 C CNN
 F 3 "~" H 5350 3175 50  0001 C CNN
@@ -414,7 +414,7 @@ $Comp
 L Device:C_Small C12
 U 1 1 5F429C0D
 P 5350 4475
-F 0 "C12" H 5150 4525 50  0000 L CNN
+F 0 "C12" H 5150 4550 50  0000 L CNN
 F 1 "220u/6.3V" H 4900 4375 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 5350 4475 50  0001 C CNN
 F 3 "~" H 5350 4475 50  0001 C CNN
@@ -609,9 +609,9 @@ $Comp
 L Device:C_Small C31
 U 1 1 600298AD
 P 2775 4900
-F 0 "C31" H 2875 4850 50  0000 L CNN
-F 1 "0.1u" H 2850 4975 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2775 4900 50  0001 C CNN
+F 0 "C31" H 2950 4850 50  0000 L CNN
+F 1 "22u/25V" H 2875 4975 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2775 4900 50  0001 C CNN
 F 3 "~" H 2775 4900 50  0001 C CNN
 	1    2775 4900
 	-1   0    0    1   
@@ -630,8 +630,8 @@ $Comp
 L Device:R_Small R54
 U 1 1 600C2693
 P 3000 4900
-F 0 "R54" H 2875 4950 50  0000 C CNN
-F 1 "100" H 2875 4850 50  0000 C CNN
+F 0 "R54" H 2850 4875 50  0000 C CNN
+F 1 "1k" H 2850 4975 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3000 4900 50  0001 C CNN
 F 3 "~" H 3000 4900 50  0001 C CNN
 	1    3000 4900
@@ -647,60 +647,8 @@ Wire Wire Line
 	3000 5275 2775 5275
 Wire Wire Line
 	3250 2500 3250 2700
-$Comp
-L Connector_Generic:Conn_02x02_Counter_Clockwise J3
-U 1 1 5FB4BAF9
-P 3725 4850
-F 0 "J3" V 3729 4930 50  0000 L CNN
-F 1 "Conn_02x02_Counter_Clockwise" V 4225 4675 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 3725 4850 50  0001 C CNN
-F 3 "~" H 3725 4850 50  0001 C CNN
-	1    3725 4850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3625 4650 3625 4525
-Wire Wire Line
-	3625 4525 3275 4525
-Connection ~ 3000 4525
-Wire Wire Line
-	3625 4525 3725 4525
-Wire Wire Line
-	3725 4525 3725 4650
-Connection ~ 3625 4525
-Wire Wire Line
-	3625 5150 3625 5275
-Wire Wire Line
-	3625 5275 3275 5275
-Connection ~ 3000 5275
-Wire Wire Line
-	3725 5150 3725 5275
-Wire Wire Line
-	3725 5275 3625 5275
-Connection ~ 3625 5275
-Text Notes 3825 5150 0    50   ~ 0
-GND_Short
-$Comp
-L kamiya:UserShort JP1
-U 1 1 5FBCD4DA
-P 3275 4925
-F 0 "JP1" V 3250 5003 60  0000 L CNN
-F 1 "UserShort" H 3225 4825 60  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3325 4925 60  0001 C CNN
-F 3 "" H 3325 4925 60  0000 C CNN
-	1    3275 4925
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3275 4725 3275 4525
-Connection ~ 3275 4525
-Wire Wire Line
-	3275 4525 3000 4525
-Wire Wire Line
-	3275 5075 3275 5275
-Connection ~ 3275 5275
-Wire Wire Line
-	3275 5275 3000 5275
+Text Notes 3650 5150 0    50   ~ 0
+GND_Short / Isolate
 $Comp
 L power:GND #PWR0101
 U 1 1 5FC12840
@@ -729,4 +677,26 @@ Wire Wire Line
 	6650 3375 7050 3375
 Wire Wire Line
 	7950 3825 8175 3825
+$Comp
+L Switch:SW_SPDT SW7
+U 1 1 5FD32303
+P 3450 4900
+F 0 "SW7" V 3404 5048 50  0000 L CNN
+F 1 "SW_SPDT" V 3495 5048 50  0000 L CNN
+F 2 "Button_Switch_THT:SW_Slide_1P2T_CK_OS102011MS2Q" H 3450 4900 50  0001 C CNN
+F 3 "~" H 3450 4900 50  0001 C CNN
+	1    3450 4900
+	0    1    1    0   
+$EndComp
+NoConn ~ 3350 5100
+Wire Wire Line
+	3000 5275 3550 5275
+Wire Wire Line
+	3550 5275 3550 5100
+Connection ~ 3000 5275
+Wire Wire Line
+	3450 4700 3450 4525
+Wire Wire Line
+	3450 4525 3000 4525
+Connection ~ 3000 4525
 $EndSCHEMATC
