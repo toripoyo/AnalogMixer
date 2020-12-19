@@ -19,7 +19,7 @@
 ## Power
 
 - Micro USB
-- 
+
 ## Other
 
-- Peak warning LED
+- Peak warning LED (-10dBV)
